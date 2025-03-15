@@ -23,11 +23,18 @@ header {
     text-align: center;
     padding: 60px 25px;
 }
+@keyframes rgbText {
+    0% { color: red; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: green; }
+    100% { color: blue; }
+}
 
 h1 {
     font-size: 50px;
     margin: 0;
-    color: #f39c12;
+    animation: rgbText 3s infinite linear;
 }
 
 

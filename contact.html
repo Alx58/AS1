@@ -6,9 +6,57 @@
     <title>Contact</title>
     <link rel="stylesheet" href="websitestyle.css">
     <style>
+        body {
+            color: white;
+        }
+
         .highlight {
             font-weight: bold;
             color: #f39c12;
+        }
+
+        .contact-info {
+            color: white;
+        }
+
+        .contact-info a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info input,
+        .contact-info textarea {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contact-info input::placeholder,
+        .contact-info textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .contact-info label {
+            color: white;
+        }
+
+        .contact-info button {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-info button:hover {
+            background-color: #d35400;
         }
     </style>
 </head>
@@ -39,11 +87,11 @@
     <main>
         <section class="contact-info">
             <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:@example.com">astepciuc@gmail.com</a></p>
-            <p>Phone: +1 234 567 890</p>
+            <p>Email: <a href="mailto:astepciuc@gmail.com">astepciuc@gmail.com</a></p>
+            <p>Phone: +07711490014</p>
 
             <h3>Contact Form</h3>
-            <form action="mailto:@example.com" method="POST" enctype="multipart/form-data">
+            <form action="mailto:astepciuc@gmail.com" method="POST" enctype="multipart/form-data">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
 
