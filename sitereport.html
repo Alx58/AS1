@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Report</title>
+    <link rel="stylesheet" href="websitestyle.css">
+</head>
+<body>
+
+    <div class="burger-menu" onclick="toggleSidebar()">☰</div>
+
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="project.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="videoDemo.html">Video Demo</a>
+        <a href="sitereport.html">Site Report</a>
+    </div>
+
+    <header>
+        <h1>Site Report</h1>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="project.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="videoDemo.html">Video Demo</a>
+        <a href="sitereport.html">Site Report</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Development Experience</h2>
+            <p>Building this website was a journey of learning and problem-solving. At first, HTML and CSS seemed simple, but making the site responsive and aesthetically pleasing presented challenges...</p>
+        </section>
+
+        <section>
+            <h2>Design Decisions</h2>
+            <p>I chose a modern, minimalistic design using <span class="highlight">#2c3e50</span> (dark blue) for professionalism and <span class="highlight">#f39c12</span> (orange) for contrast...</p>
+        </section>
+
+        <section>
+            <h2>Validation Reports</h2>
+            <img src="validation-html.png" alt="HTML Validation">
+            <img src="validation-css.png" alt="CSS Validation">
+        </section>
+
+        <section>
+            <h2>Video Demonstration</h2>
+            <p>Watch the full walkthrough here:</p>
+            <a href="https://www.youtube.com/your-video-link" target="_blank" class="video-link">Watch Video</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><span class="highlight">@2025 Alex Stepciuc</span></p>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
