@@ -256,3 +256,16 @@ body {
         padding: 12px 0;
     }
 }
+
+.portfolio {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        width: 100%;
+    }
+}
