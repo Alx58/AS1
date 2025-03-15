@@ -152,3 +152,19 @@ footer {
     padding: 20px;
     margin-top: 50px;
 }
+input[type="text"], 
+input[type="email"], 
+textarea {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+textarea:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 8px #f39c12;
+    border-color: #f39c12;
+}
