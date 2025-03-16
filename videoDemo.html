@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex's Portfolio</title>
+    <title>Video Demonstration</title>
     <link rel="stylesheet" href="websitestyle.css">
     <style>
-                body {
+        body {
             font-family: sans-serif;
         }
-           .highlight {
+        .highlight {
             font-weight: bold;
             color: #f39c12;
         }
-        .about h2 {
-    color: white;
-}
-        .about p {
+        main {
+            padding: 35px;
+            text-align: center;
             color: white;
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border: none;
         }
     </style>
 </head>
 <body>
+
     <div class="burger-menu" onclick="toggleSidebar()">☰</div>
 
     <div class="sidebar">
@@ -33,7 +39,7 @@
     </div>
 
     <header>
-        <h1>Welcome to my Website!</h1>
+        <h1>Video Showcase</h1>
     </header>
 
     <nav class="main-nav">
@@ -45,21 +51,23 @@
     </nav>
 
     <main>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>My name is <span class="highlight">Alex</span> Stepciuc, I am a student at Northampton University, studying Artificial Intelligence and Data Science. This is my portfolio!</p>
-            <img src="images/Portfolio.png" alt="My Portfolio" class="portfolio">
+        <section>
+            <h2>Video Showcase</h2>
+            <video controls>
+                <source src="path/to/your-local-video.mp4" type="video/mp4">
+            </video>
         </section>
     </main>
 
     <footer>
         <p><span class="highlight">@2025 Alex Stepciuc</span></p>
-    </footer>       
-    
+    </footer>
+
     <script>
         function toggleSidebar() {
             document.querySelector('.sidebar').classList.toggle('active');
         }
     </script>
+
 </body>
 </html>
